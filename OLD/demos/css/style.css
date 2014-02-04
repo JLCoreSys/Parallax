@@ -1,0 +1,107 @@
+@font-face
+{
+    font-family: "Futura Medium";
+    src:         url("../../fonts/futurastd-medium-webfont.eot");
+    src:         url("../../fonts/futurastd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/futurastd-medium-webfont.woff") format("woff"), url("../../fonts/futurastd-medium-webfont.ttf") format("truetype"), url("../../fonts/futurastd-medium-webfont.svg#futura_std_mediumregular") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: "Futura Medium Condensed";
+    src:         url("../../fonts/futubtmc-webfont.eot");
+    src:         url("../../fonts/futubtmc-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/futubtmc-webfont.woff") format("woff"), url("../../fonts/futubtmc-webfont.ttf") format("truetype"), url("../../fonts/futubtmc-webfont.svg#futuramedium_condensed") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: "Futura Heavy";
+    src:         url("../../fonts/futurastd-heavy-webfont.eot");
+    src:         url("../../fonts/futurastd-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/futurastd-heavy-webfont.woff") format("woff"), url("../../fonts/futurastd-heavy-webfont.ttf") format("truetype"), url("../../fonts/futurastd-heavy-webfont.svg#futura_std_mediumbold") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: 'Futura Bold Condensed';
+    src:         url("../../fonts/futubtbc-webfont.eot");
+    src:         url("../../fonts/futubtbc-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/futubtbc-webfont.woff") format("woff"), url("../../fonts/futubtbc-webfont.ttf") format("truetype"), url("../../fonts/futubtbc-webfont.svg#futurabold_condensed") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+body { font-family: "Futura Medium Condensed", sans-serif; }
+strong, h1, h2, h3, h4, h5, header, .heavy { font-family: "Futura Heavy", sans-serif; }
+.negmargintop25 { margin-top: -25px; }
+.jlname { font-size: 24px; }
+a.jlname { color: #FFF; text-decoration: none;  }
+.size48 { font-size: 48px; }
+.size24 { font-size: 24px; }
+/*.op0 { opacity: 0; }*/
+.jldots { width: 25px; height: 10px; background: transparent url(../images/dot.png) repeat-y top center; }
+.blink { opacity: 1; }
+.item-progress { width: 8px; height: 0px; background: transparent url(../images/dot.png) repeat-y top center; position: absolute; top: 40px; left: 15px; }
+.pbg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent url(../images/pbg.jpg) no-repeat center center; z-index: 1;}
+#welcome_logo { overflow: hidden; height: auto; height: 135px; }
+.zi100 { z-index: 100; }
+.zi1 { z-index: 1; }
+.whitebg-full { background: #fff; }
+.frame-target { width: 300px; height: 300px; margin: 0 auto; }
+.frame-target>div { position: absolute; top: 0; left: 0; width: 100%; height: auto; overflow: hidden; }
+/* parallax overrides */
+.parallax-item.paused { overflow: hidden; opacity: 1 !important; }
+a.next-frame,
+.next-frame { text-decoration:none; border:none; position: absolute; right: 5px; bottom: 5px; width: 24px; height: 24px; cursor: pointer; background: transparent url(../images/next.png) no-repeat center center; }
+a.prev-frame,
+.prev-frame { text-decoration:none; border:none; position: absolute; left: 5px; bottom: 5px; width: 24px; height: 24px; cursor: pointer; background: transparent url(../images/prev.png) no-repeat center center; }
+a.play-frame,
+.play-frame { text-decoration:none; border:none; position: absolute; left: 25%; bottom: 5px; width: 50%; height: 24px; cursor: pointer; background: transparent url(../images/play.png) no-repeat center center;}
+.item-progress {
+    background:
+        -moz-radial-gradient(white 15%, transparent 16%),
+        -moz-radial-gradient(white 15%, transparent 16%),
+        transparent;
+    background:
+        -webkit-radial-gradient(white 15%, transparent 16%),
+        -webkit-radial-gradient(white 15%, transparent 16%),
+        transparent;
+
+    -webkit-background-size:8px 16px;
+    -moz-background-size:8px 16px;
+    background-size:8px 16px;
+}
+.round5, .rounded5 {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.sprite-target {
+    width: 80%;
+    min-height: 50px;
+    margin: 0 auto;
+}
+.sprite-item {
+    width: 320px;
+    font-size: 16px;
+    text-align: center;
+    background: #000;
+    color: #FFF;
+    margin: 2px auto 2px auto;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+}
+.nooverflow { overflow: hidden;}
+.video-frames,
+.video-target {
+    position:relative;
+    width: 640px;
+    height: 266px;
+    overflow: hidden;
+    margin: 0 auto;
+}

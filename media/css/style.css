@@ -1,0 +1,152 @@
+@font-face
+{
+    font-family: "Futura Medium";
+    src:         url("../fonts/futurastd-medium-webfont.eot");
+    src:         url("../fonts/futurastd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futurastd-medium-webfont.woff") format("woff"), url("../fonts/futurastd-medium-webfont.ttf") format("truetype"), url("../fonts/futurastd-medium-webfont.svg#futura_std_mediumregular") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: "Futura Medium Condensed";
+    src:         url("../fonts/futubtmc-webfont.eot");
+    src:         url("../fonts/futubtmc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futubtmc-webfont.woff") format("woff"), url("../fonts/futubtmc-webfont.ttf") format("truetype"), url("../fonts/futubtmc-webfont.svg#futuramedium_condensed") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: "Futura Heavy";
+    src:         url("../fonts/futurastd-heavy-webfont.eot");
+    src:         url("../fonts/futurastd-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futurastd-heavy-webfont.woff") format("woff"), url("../fonts/futurastd-heavy-webfont.ttf") format("truetype"), url("../fonts/futurastd-heavy-webfont.svg#futura_std_mediumbold") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: 'Futura Bold Condensed';
+    src:         url("../fonts/futubtbc-webfont.eot");
+    src:         url("../fonts/futubtbc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futubtbc-webfont.woff") format("woff"), url("../fonts/futubtbc-webfont.ttf") format("truetype"), url("../fonts/futubtbc-webfont.svg#futurabold_condensed") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+html, body{ margin: 0; padding: 0; background: #000000; color: #FFFFFF; }
+strong, h1, h2, h3, h4, h5, header{ font-family: "Futura Heavy", sans-serif; }
+.hidden{ display: none; }
+.clear{ clear: both; }
+.white { color: #FFF; }
+.black { color: #000; }
+.whitebg { background-color: rgba(255,255,255,.75); line-height: 100%; }
+.blackbg { background-color: rgba(0,0,0,.75); line-height: 100%; }
+.rounded5, .border5{ border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -moz-border-radius: 5px; }
+.center { margin-left: auto !important; margin-right: auto !important; }
+.shadow{ box-shadow: 0 0 8px #333333; -moz-box-shadow: 0 0 8px #333333; -webkit-box-shadow: 0 0 8px #333333; -o-box-shadow: 0 0 8px #333333; }
+.absolute { position: absolute; top: 0; left: 0; }
+.full { width: 100%; height: 100%; }
+
+/* header */
+.header-bar{ height: 60px; }
+.header-bar-desc{ margin-left: 50px; height: 60px; line-height: 60px; }
+.header-logo{ position: absolute; top: -7px; right: 5px; }
+
+a.full{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-decoration: none; }
+.jlscrolldown{ cursor:pointer; width: 160px; height: 25px; margin: 10px auto 20px auto; background: transparent url(../images/arrow.png) no-repeat top center; color: #FFFFFF; text-align: center; padding-top: 50px; }
+.jlscrolldown.large{ font-size: 32px; width: 200px; padding-top: 50px; cursor: pointer; }
+.jldots{ width: 25px; height: 50px; background: transparent url(../images/dot.png) repeat-y top center; }
+.inline{ display: inline-block; }
+.hidden{ display: none; }
+.copyright{ margin: 2px; padding: 2px 5px; font-size: 14px; color: #FFFFFF; background: #000000; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; position: fixed; bottom: 2px; right: 2px; z-index: 999999999999999; }
+.scroll-down{ position: fixed; top: 20px; left: 1px; height: 45px; width: 35px; background: transparent url(../images/arrow.png) no-repeat top center; z-index: 999999999999999; cursor: pointer; }
+.jllogosm{ position: fixed; left: 2px; bottom: 2px; width: 112px; height: 67px; background: rgba(0, 0, 0, .5) url(../images/logo-sm.png) no-repeat center center; z-index: 999999999999; }
+.totop{ cursor: pointer; width: 33px; height: 31px; background: transparent url(../images/totop.png) no-repeat center center; position: absolute; top: -28px; left: 39px; -webkit-transform: all 1s; transform: all 1s; opacity: 0; }
+
+.totop:hover,.jllogosm:hover .totop{ opacity: 1; }
+.pointer{ cursor: pointer; }
+ul.list{ margin: 0; padding: 0; }
+ul.list,ul.list li{ list-style: none; margin: 2px 0; padding: 2px; }
+
+/* parallax overrides */
+.parallax-frame-progress{ left: 15px; top: 65px; }
+
+/* welcome page */
+.welcome-logo { max-width: 100%; }
+.welcome-logo img { max-width: 80%; }
+
+/* about page */
+.about-container { width: 512px; height: 384px; overflow: hidden; font-size: 24px; font-weight: bold; }
+.about-step1 { background:transparent url(../images/pin/1.png) no-repeat top left; }
+.about-step2 { background:transparent url(../images/pin/2.jpg) no-repeat top left; }
+.about-step3 { background:transparent url(../images/pin/3.jpg) no-repeat top left; }
+.about-step4 { background:transparent url(../images/pin/4.jpg) no-repeat top left; }
+.about-step5 { background:transparent url(../images/pin/5.jpg) no-repeat top left; }
+.about-step6 { background:transparent url(../images/pin/6.jpg) no-repeat top left; }
+.about-step7 { background:transparent url(../images/pin/7.jpg) no-repeat top left; }
+.about-step8 { top: 100px; height: auto; }
+.about-step9 { top: 130px; height: auto;}
+.about-step10 { top: 160px; height: auto;}
+.about-step11 { top: 190px; height: auto;}
+.about-step12 { top: 220px; height: auto;}
+.about-step13 { top: 250px; height: auto;}
+.about-step14 { top: 280px; height: auto;}
+.about-step15 { top: 310px; height: auto;}
+.about-step16 { top: 340px; height: auto;}
+.about-step17 { top: 100px; height: auto;}
+.about-step18 { top: 130px; height: auto;}
+.about-step19 { top: 160px; height: auto;}
+.about-step20 { top: 190px; height: auto;}
+.about-step21 { top: 220px; height: auto;}
+.about-step22 { top: 250px; height: auto;}
+.about-step23 { top: 280px; height: auto;}
+.about-step24 { top: 310px; height: auto;}
+.about-step25 { top: 340px; height: auto;}
+
+@media only screen and (max-width:480px)
+{
+    /* welcome */
+
+    /* about */
+    .about-container { width: 380px; height: auto; margin-left: auto; margin-right:auto; font-size: 16px; }
+    .about-step1,
+    .about-step2,
+    .about-step3,
+    .about-step4,
+    .about-step5,
+    .about-step6,
+    .about-step7 { background-size: 380px auto; }
+    .about-step8 { top: 80px; height: auto; }
+    .about-step9 { top: 100px; height: auto;}
+    .about-step10 { top: 120px; height: auto;}
+    .about-step11 { top: 140px; height: auto;}
+    .about-step12 { top: 160px; height: auto;}
+    .about-step13 { top: 180px; height: auto;}
+    .about-step14 { top: 200px; height: auto;}
+    .about-step15 { top: 220px; height: auto;}
+    .about-step16 { top: 240px; height: auto;}
+    .about-step17 { top: 80px; height: auto;}
+    .about-step18 { top: 100px; height: auto;}
+    .about-step19 { top: 120px; height: auto;}
+    .about-step20 { top: 140px; height: auto;}
+    .about-step21 { top: 160px; height: auto;}
+    .about-step22 { top: 180px; height: auto;}
+    .about-step23 { top: 200px; height: auto;}
+    .about-step24 { top: 220px; height: auto;}
+    .about-step25 { top: 240px; height: auto;}
+}
+
+@media only screen and (max-width:768px) and (min-width:480px)
+{
+    /* welcome */
+
+    /* about */
+}
+
+@media only screen and (min-width:768px) and (max-width:960px)
+{
+    /* welcome */
+
+    /* about */
+}

@@ -1,0 +1,118 @@
+/***************
+ * Intro Panel *
+ ***************/
+#story-header {
+    color : #666;
+}
+
+#story-header .logo {
+    margin : 20px 0 50px 0;
+}
+
+#story-header .logo.start {
+    left: 0px;
+}
+
+#story-header .logo.end {
+    left: -100%;
+}
+
+#story-header h2 {
+    font-family: "Caecilia-Roman", Verdana, sans-serif;
+}
+
+#story-header .story {
+    width         : 850px;
+    padding-right : 0px;
+}
+
+#story-header p {
+    width     : 800px;
+    font-size : 16px;
+}
+
+#story-header ul li {
+    font-size : 16px;
+    margin    : 16px 0;
+}
+
+#story-header ul {
+    padding : 0px;
+}
+
+/***************
+ * Intel Panel *
+ ***************/
+#story-intel {
+    color      : #FFF;
+    background : #022639;
+}
+
+#story-intel .logo {
+    position : absolute;
+    left    : 50%;
+    top   : 5%;
+}
+
+#story-intel .logo.start {
+    top : 150%;
+}
+
+#story-intel .logo.end {
+    top : 150%;
+    left: 150%;
+}
+
+#story-intel .story.end { top: auto; left: -150%; }
+
+/*********************
+ * Ultrabook Project *
+ *********************/
+#story-william {
+    color      : #CCC;
+    background : #000;
+}
+
+#story-william .bg {
+    left: 0;
+    right: auto;
+}
+
+#story-william .bg.start {
+    left: -50%;
+}
+#story-william .bg.end {
+    left: 50%;
+}
+
+/**************
+ * Bing Panel *
+ **************/
+#story-bing {
+    color       : #FFF;
+    text-shadow : 1px 1px 1px #000;
+    background  : #C9BC33;
+}
+
+#story-bing .bg.start,
+#story-bing .bg.end,
+#story-bing .bg {
+    left  : auto;
+    right : 0px;
+}
+
+
+
+#story-bing .logo {
+    position : absolute;
+    right    : 20%;
+    bottom   : 50%;
+}
+
+#story-bing .logo.start {
+    bottom : 190%;
+}
+
+#story-bing .logo.end {
+    bottom : -90%;
+}

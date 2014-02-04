@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{ margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html, body { width: 100%; height: 100%; }
+
+@font-face
+{
+    font-family: "Futura Medium";
+    src:         url("../fonts/futurastd-medium-webfont.eot");
+    src:         url("../fonts/futurastd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futurastd-medium-webfont.woff") format("woff"), url("../fonts/futurastd-medium-webfont.ttf") format("truetype"), url("../fonts/futurastd-medium-webfont.svg#futura_std_mediumregular") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: "Futura Medium Condensed";
+    src:         url("../fonts/futubtmc-webfont.eot");
+    src:         url("../fonts/futubtmc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futubtmc-webfont.woff") format("woff"), url("../fonts/futubtmc-webfont.ttf") format("truetype"), url("../fonts/futubtmc-webfont.svg#futuramedium_condensed") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: "Futura Heavy";
+    src:         url("../fonts/futurastd-heavy-webfont.eot");
+    src:         url("../fonts/futurastd-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futurastd-heavy-webfont.woff") format("woff"), url("../fonts/futurastd-heavy-webfont.ttf") format("truetype"), url("../fonts/futurastd-heavy-webfont.svg#futura_std_mediumbold") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+@font-face
+{
+    font-family: 'Futura Bold Condensed';
+    src:         url("../fonts/futubtbc-webfont.eot");
+    src:         url("../fonts/futubtbc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futubtbc-webfont.woff") format("woff"), url("../fonts/futubtbc-webfont.ttf") format("truetype"), url("../fonts/futubtbc-webfont.svg#futurabold_condensed") format("svg");
+    font-weight: normal;
+    font-style:  normal
+}
+
+body { background: #000; color: #FFF; font-family: "Futura Medium Condensed", sans-serif }
+body * { position: relative; }
+
+strong, h1, h2, h3, h4, h5, header { font-family: "Futura Heavy", sans-serif; }
+
+.clear { clear: both; }
+
+.logo {
+    width: 212px;
+    height: 125px;
+    margin: 30px auto 5px auto;
+    background: transparent url(../images/logo.png) no-repeat top center;
+    display: block !important;
+    background-size: auto 100%;
+}
+
+.name {
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFF;
+    margin: 0 auto;
+    display: inline;
+    top: -32px !important;
+}
+
+.name h1 {
+    /*display: block !important;*/
+    position: relative !important;
+    margin: 0 auto !important;
+    width: auto !important;
+}
+
+.home_header {
+    position: relative !important;
+    top: 0;
+    left: 0;
+    /*display: block !important;*/
+}
+
+.span6 {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 200px;
+    box-shadow: 0px 5px 6px #333;
+    display: block !important;
+}
+
+.horiz-slide-box {
+    width: auto;
+    height: auto;
+    background: rgba(255,255,255,.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.horiz-slide-box .box {
+    border-radius: 10px;
+    color: #000;
+}
+
+.copyright {
+    margin: 2px;
+    padding: 2px 5px;
+    font-size: 14px;
+    color: #FFF;
+    background: #000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    z-index: 999999999999999;
+}
+
+.scroll-down {
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    height: 45px;
+    width: 35px;
+    background: transparent url(../images/arrow.png) no-repeat top center;
+    z-index: 999999999999999;
+    cursor:pointer;
+}

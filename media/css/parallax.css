@@ -1,0 +1,103 @@
+.parallax-container{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
+.parallax-container *{ position: relative; }
+
+/* PARALLAX LOADER */
+.parallax-loader{overflow: hidden;position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #FFFFFF; z-index: 9999999999; box-shadow: 0px 0px 8px #666666; -webkit-box-shadow: 0px 0px 8px #666666; -moz-box-shadow: 0px 0px 8px #666666; -o-box-shadow: 0px 0px 8px #666666; }
+.parallax-loader-content{position: absolute; top: 0; left: 0; width: 100%; height: 0; overflow: hidden; background: #999999; text-align: center; box-shadow: 0px 0px 8px #666666; -webkit-box-shadow: 0px 0px 8px #666666; -moz-box-shadow: 0px 0px 8px #666666; -o-box-shadow: 0px 0px 8px #666666; }
+.parallax-loader-percent{-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;-ms-transition: all 0.2s ease;transition:all 0.2s ease;position: relative; display: inline; font-weight: bold; font-size: 32px; color: #000000; margin: 0 auto; }
+.parallax-loader-el{ display: none; }
+.parallax-loader-content img,.parallax-loader-content{ max-width: 100%; }
+
+/* PARALLAX FRAME */
+.parallax-frame{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-size: 100% auto; background-position: center center; overflow: hidden; box-shadow: 0px 0px 12px #131313; -moz-box-shadow: 0px 0px 12px #131313; -webkit-box-shadow: 0px 0px 12px #131313; -o-box-shadow: 0px 0px 12px #131313; border: 1px solid #1313;}
+.parallax-frame.pause { top: 0; left: 0; -webkit-transform: none; }
+.parallax-frame-bg{ display: none; }
+.parallax-frame-progress{ position: absolute; top: 0; left: 5px; height: 110px; width: 8px; background: transparent url(../images/dot.png) repeat-y top center; position: absolute;}
+.parallax-frame.tall { background-size: auto 100%;}
+.parallax-frame.wide { background-size: 100% auto;}
+.parallax-frame-progress{ background: -moz-radial-gradient(white 15%, transparent 16%), -moz-radial-gradient(white 15%, transparent 16%), transparent; background: -webkit-radial-gradient(white 15%, transparent 16%), -webkit-radial-gradient(white 15%, transparent 16%), transparent; -webkit-background-size: 8px 16px; -moz-background-size: 8px 16px; background-size: 8px 16px;}
+.parallax-frame-content{ width: 100%; height: 100%; overflow: hidden;}
+.scrollable .parallax-frame-content{ overflow-y: auto;}
+
+/* PARALLAX SCROLLER */
+.parallax-scroller{ position: absolute; top: 0; left: 0; width: 1px; height: 0; visibility: hidden; opacity: 0; }
+
+/* PARALLAX NAVIGATION */
+.parallax-nav-wrapper { z-index: 999999999999999; /* really want it on top */ position: fixed; top: 0; left: 0; width: 100%; -webkit-transition: background 0.5s ease; -moz-transition: background 0.5s ease; -o-transition: background 0.5s ease; -ms-transition: background 0.5s ease; transition: background 0.5s ease;}
+.parallax-nav { position: relative; background: #000; list-style: none; width: 90%; margin: 0 auto; padding: 0; border-left: 1px solid #000; border-right: 1px solid #000; box-shadow: 0px 0px 8px #FFF;}
+.parallax-nav-item { position: relative; list-style: none; float: left; width: 20%; min-width: 10%; background: #222; margin: 0; padding: 0; text-align: center; -webkit-transition: background 0.5s ease; -moz-transition: background 0.5s ease; -o-transition: background 0.5s ease; -ms-transition: background 0.5s ease; transition: background 0.5s ease; color: #FFF; background: rgb(174,188,191); /* Old browsers */ background: -moz-linear-gradient(top, rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(50%,rgba(110,119,116,1)), color-stop(51%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* IE10+ */ background: linear-gradient(to bottom, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */}
+.parallax-nav-item a { text-decoration: none; display: block; margin: 1px; padding: 1px 5px; color: inherit; -webkit-transition: background 0.5s ease; -moz-transition: background 0.5s ease; -o-transition: background 0.5s ease; -ms-transition: background 0.5s ease; transition: background 0.5s ease;}
+.parallax-nav-item a:hover { border: none; color:#430b0b; background: rgb(255,255,255); /* Old browsers */ background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(241,241,241,1)), color-stop(51%,rgba(225,225,225,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* IE10+ */ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */}
+.parallax-nav-tab-wrapper { clear: both; position: absolute; width: 50%; min-width: 40px; height: 36px; left: 25%; bottom: -39px;}
+.parallax-nav-tab { cursor:pointer; position: relative; width: 36px; height: 18px; margin: 0 auto; background: transparent url(../images/parallax-menu.png) no-repeat center center; -webkit-transition: background 0.5s ease; -moz-transition: background 0.5s ease; -o-transition: background 0.5s ease; -ms-transition: background 0.5s ease; transition: background 0.5s ease;}
+.parallax-nav-tab.active { transform: rotateZ(180deg); -webkit-transform: rotateZ(180deg); -moz-transform: rotateZ(180deg); -o-transform: rotateZ(180deg);}
+
+/* OTHER */
+.parallax-scroll{ overflow: auto; }
+.parallax-scroll::-webkit-scrollbar,.parallax-frame-content::-webkit-scrollbar,.parallax-frame::-webkit-scrollbar{ width: 5px; height: 10px; }
+.parallax-scroll::-webkit-scrollbar-track,.parallax-frame-content::-webkit-scrollbar-track,.parallax-frame::-webkit-scrollbar-track{ background-color: #FFFFFF; -webkit-border-radius: 5px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+.parallax-scroll::-webkit-scrollbar-thumb:vertical,.parallax-frame-content::-webkit-scrollbar-thumb:vertical,.parallax-frame::-webkit-scrollbar-thumb:vertical{ background-color: rgba(0, 0, 0, .2); -webkit-border-radius: 6px; }
+.parallax-scroll::-webkit-scrollbar-thumb:vertical:hover,.parallax-frame-content::-webkit-scrollbar-thumb:vertical:hover,.parallax-frame::-webkit-scrollbar-thumb:vertical:hover,.parallax-scroll::-webkit-scrollbar-thumb:horizontal:hover,.parallax-frame::-webkit-scrollbar-thumb:horizontal:hover{ background: #333333; }
+.parallax-frame-content::-webkit-scrollbar--thumb:horizontal,.parallax-frame::-webkit-scrollbar-thumb:horizontal{ background-color: rgba(0, 0, 0, .2); -webkit-border-radius: 6px; }
+.parallax-no-scroll { overflow: hidden !important; }
+.parallax-scroll-to { cursor: pointer; }
+
+/* PLAYBAR AND BUTTONS */
+.parallax-playbar{ height: 25px !important; z-index:9999999999; }
+.parallax-playbar a{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index:9999999999999; }
+.parallax-next-btn{ max-width: 33%; text-decoration: none; border: none; height: 24px; cursor: pointer; background: transparent url(../images/next.png) no-repeat center center; cursor: pointer; z-index:9999999999999; }
+.parallax-prev-btn{ max-width: 33%; text-decoration: none; border: none; height: 24px; cursor: pointer; background: transparent url(../images/prev.png) no-repeat center center; cursor: pointer; z-index:9999999999999; }
+.parallax-play-btn{ max-width: 33%; text-decoration: none; border: none; height: 24px; cursor: pointer; background: transparent url(../images/play.png) no-repeat center center; cursor: pointer; z-index:9999999999999; }
+
+
+@media only screen and (max-width:480px)
+{
+ /* CONTAINER */
+
+ /* LOADER */
+
+ /* FRAME */
+ .parallax-frame-progress { width: 5px; left: 9px; top: 33px; }
+
+ /* NAVIGATION */
+.parallax-nav-item { width: 50%; }
+
+ /* OTHER */
+
+ /* PLAYBAR ..ETC */
+
+}
+
+@media only screen and (max-width:768px) and (min-width:480px)
+{
+ /* CONTAINER */
+
+ /* LOADER */
+
+ /* FRAME */
+ .parallax-frame-progress { width: 5px; left: 9px; top: 33px; }
+
+ /* NAVIGATION */
+.parallax-nav-item { width: 33.3333333333%; }
+
+ /* OTHER */
+
+ /* PLAYBAR ..ETC */
+}
+
+@media only screen and (min-width:768px) and (max-width:960px)
+{
+ /* CONTAINER */
+
+ /* LOADER */
+
+ /* FRAME */
+ .parallax-frame-progress { width: 5px; left: 9px; top: 33px; }
+
+ /* NAVIGATION */
+    .parallax-nav-item { width: 25%; }
+
+ /* OTHER */
+
+ /* PLAYBAR ..ETC */
+}
